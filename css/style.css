@@ -75,3 +75,26 @@ hr.dashed
 	border-top: 3px solid grey;
 	width: 50%;
 }
+
+#mainFlex
+{
+	display: flex;
+	flex-direction: row;
+}
+
+#fishyTank
+{
+	width: 500px;
+	border-style: solid;
+	border-width: 10px;
+	border-color: white;
+
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 10px;
+}
+
+#fishy
+{
+	width: 100%;
+}
