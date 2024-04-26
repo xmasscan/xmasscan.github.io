@@ -3,98 +3,51 @@
 	padding: 0px;
 }
 
-html
-{
+html {
 	background-color: #212121;
 	color: white;
-	font-family: 'Courier New', monospace;
+	font-family: 'Courier New', Monospace;
 }
-#banner
-{
+
+#banner {
+	margin-left: 20px;
+	margin-bottom: 20px;
+}
+
+#navbar {
+	width: 200px;
+	margin-left: 20px;
 	margin-bottom: 10px;
-	margin-left: 20px;
 }
 
-#navbar ul
-{
-	list-style-type: none;
+#navbar ul {
 	display: flex;
-	justify-content: start;
-	margin-left: 20px;
+	flex-direction: row;
+	justify-content: space-between;
+	text-decoration: none;
+	list-style-type: none;
+	margin-left: none;
 }
 
-#navbar a
-{
+#navbar a {
 	text-decoration: none;
 	color: white;
-	display: inline;
 }
 
-#navbar a:hover
-{
+#navbar a:hover {
 	color: gray;
 }
 
-#navbar li
-{
-	margin-left: 0px;
-	margin-right: 10px;
-}
 
-#content
-{
-	margin-left: 20px;
-	margin-top: 10px;
-}
-
-#content p
-{
-	margin-top: 5px;
-	margin-bottom: 5px;
-}
-
-#content li
-{
-	margin-left: 15px;
-}
-
-#contact
-{
-	margin-left: 20px;
-	margin-top: 10px;
-}
-
-#featured
-{
-	margin-left: 20px;
-	margin-top: 10px;
-}
-
-hr.dashed
-{
-	border-top: 3px solid grey;
-	width: 50%;
-}
-
-#mainFlex
-{
+#introFlex {
 	display: flex;
-	flex-direction: row;
+	margin: 20px;
 }
 
-#fishyTank
-{
-	width: 500px;
-	border-style: solid;
-	border-width: 10px;
-	border-color: white;
-
-	margin-left: 10px;
-	margin-right: 10px;
-	margin-top: 10px;
+#content {
+	width: 75%;
 }
 
-#fishy
-{
-	width: 100%;
+#image img {
+	width: 200px;
 }
