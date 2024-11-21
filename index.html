@@ -5,49 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title></title>
     <link href="css/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
   </head>
   <body>
 
     <div>
       <h1><a href="index.html" style="color: white;">>xmasscan</a></h1>
       <ul>
-        <li><h3><a>portfolio</a></h3></li>
-        <li><h3><a>blog</a></h3></li>
+        <li><h3><a href="index.html">/portfolio</a></h3></li>
+        <li><h3><a href="index.html">/blog</a></h3></li>
+        <li><h3><a href="index.html">/ctfs</a></h3></li>
       </ul>
     </div>
 
-    <div>
-      <h2>about me</h2>
-      <p>michael hanif khan <br> computer science undergrad @ uic</p>
-      <p>i like poking around in the computer
-      <br>interested in cybersecurity
-      </p>
-
-      <ul>
-        <li><a>github</a></li>
-        <li><a>linkedin</a></li>
-        <li><a>lug@uic</a></li>
-        <li><a>rss</a></li>
-      </ul>
-
+    <div id="body">
+    <div id="main">
+      <div class="column" id="about-me">
+        <h2>about me</h2>
+        <p style="margin-top: 1%;">michael hanif khan 
+        <br>computer science undergrad @ uic
+        <br>lug @ uic member
+        <br>DoE cyberforce participant
+        </p>
+        <p>[TODO: UPDATE]
+        </p>
+      </div>
+      <div class="column" id="interests">
+        <h2>interests</h2>
+        <ul id="list" style="margin-top: 1%;">
+            <li>network security</li>
+            <li>digital forensics</li>
+            <li>operating systems</li>
+            <li>cryptography</li>
+            <li>computer graphics</li>
+          </ul>
+      </div>
     </div>
-
-    <div> 
-    <h2>interests</h2>
-     <ul id="list">
-        <li>network security</li>
-        <li>digital forensics</li>
-        <li>operating systems</li>
-        <li>cryptography</li>
-      </ul>
-      
-      <p>in general, i just like making things and taking them apart</p>
-
-      
+    
+    <div id="links">
+        <ul>
+          <li><a>github</a></li>
+          <li><a>linkedin</a></li>
+          <li><a>lug@uic</a></li>
+          <li><a>rss</a></li>
+        </ul>
     </div>
-
+  </div>
   </body>
-  <footer>
-    <p>made with html</p>
-  </footer>
 </html>
