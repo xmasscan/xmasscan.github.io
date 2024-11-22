@@ -7,6 +7,24 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff2/JetBrainsMono-Bold-Italic.woff2') format('woff2'),
+    url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff/JetBrainsMono-Bold-Italic.woff') format('woff');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff2/JetBrainsMono-Regular.woff2') format('woff2'),
+    url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff/JetBrainsMono-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 ul {
   list-style-type: none;
   margin: 0;
@@ -62,6 +80,7 @@ h2 {
 
 #main {
   display: flex;
+  justify-content: space-between;
 }
 
 .column{
@@ -71,18 +90,6 @@ h2 {
   margin-right: 10px;
 }
 
-#links {
-  width: 800px;
-  justify-content: center;
+#interests h3 {
+  display: block;
 }
-
-#links ul {
-  display: flex;
-  margin-left: 15%;
-}
-
-#links li {
-  margin-left: 5px;
-  margin-right: 5px;
-}
-
