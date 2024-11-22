@@ -65,11 +65,15 @@ h2 {
 }
 
 .column{
-  border: 2px #c7c7c7 solid;
+ /* border: 2px #c7c7c7 solid; */
   width: 400px;
   text-wrap: wrap;
-  padding-left: 10px;
   margin-right: 10px;
+}
+
+#links {
+  width: 800px;
+  justify-content: center;
 }
 
 #links ul {
