@@ -1,0 +1,32 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+    <!--
+      FORMAT OF ARTICLE
+      1. Header 
+      2. Article Content
+
+      YAML METADATA TEMPLATE
+      Date: ...
+      Last Updated: ...
+      Title: ...
+      Subtitle: ...
+      Tags: ...    
+--->
+    $for(author-meta)$
+      <meta name="author" content="$author-meta$">
+    $endfor$
+    <meta name="date" content="$date-meta$">
+    $if(last-updated-meta)$
+      <meta name="last-updated" content="$last-updated-meta$">
+    $endif$
+    <title>$if(category-meta)$$category-meta$ - $endif$$title-meta$</title>
+  </head>
+  <body>
+    <h1>$if(title)$$title$$endif$</h1>
+    <h2>$if(subtitle)$$subtitle$$endif$</h2>
+    $body$
+  </body>
+</html>
