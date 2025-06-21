@@ -21,12 +21,25 @@ html {
   margin: 40px;
 }
 
-.navbar ul {
+ul {
   list-style-type: none;
   margin: 0px;
   padding: 0px;
   overflow: hidden;
 }
+
+#whoami li {
+  padding-bottom: 8px;
+}
+
+a {
+  color: #458588;
+}
+
+a:visited {
+  color: #b16286;
+}
+
 
 .navbar li {
   float: left;
