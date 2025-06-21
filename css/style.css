@@ -1,95 +1,44 @@
-@font-face {
-  font-family: 'JetBrains Mono';
-  src: url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff2/JetBrainsMono-Bold.woff2') format('woff2'),
-    url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff/JetBrainsMono-Bold.woff') format('woff');
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
+/* Gruvbox Dark Colorscheme */
 
-@font-face {
-  font-family: 'JetBrains Mono';
-  src: url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff2/JetBrainsMono-Bold-Italic.woff2') format('woff2'),
-    url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff/JetBrainsMono-Bold-Italic.woff') format('woff');
-  font-weight: 700;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'JetBrains Mono';
-  src: url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff2/JetBrainsMono-Regular.woff2') format('woff2'),
-    url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff/JetBrainsMono-Regular.woff') format('woff');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-li {
-  display: inline;
-}
-
-a{
-  color: #9e9e9e;
-  text-decoration: none;
-  transition-property: color;
-  transition-duration: 1s;
-}
-
-a:hover
-{
-  color: #c7c7c7;
-}
-
-html{
-  background-color: #212121;
-  color: white;
-}
-
+/* bettermotherfuckingwebsite.com */
 body {
   margin: 40px auto;
-  max-width: 800px;
+  max-width: 650px;
   line-height: 1.6;
   font-size: 18px;
-  padding: 0 10px;
-  font-family: "JetBrains Mono", monospace;
+  padding: 0 10px
 }
 
-#list li {
-  display: block;
-}
-
+h1,
+h2,
 h3 {
-  display: inline;
+  line-height: 1.2
 }
 
-h2 {
-  margin-bottom: 1%;
+html {
+  background-color: #282828;
+  color: #ebdbb2;
+  margin: 40px;
 }
 
-#body {
-  display: flex;
-  flex-direction: column;
+.navbar ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
 }
 
-#main {
-  display: flex;
-  justify-content: space-between;
+.navbar li {
+  float: left;
 }
 
-.column{
- /* border: 2px #c7c7c7 solid; */
-  width: 400px;
-  text-wrap: wrap;
-  margin-right: 10px;
-}
-
-#interests h3 {
+.navbar li a {
+  color: #d5c4a1;
   display: block;
+  text-align: center;
+  padding-right: 16px;
+}
+
+.navbar li a:hover {
+  color: #ebdbb2;
 }

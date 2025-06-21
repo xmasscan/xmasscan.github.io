@@ -3,50 +3,40 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title></title>
+    <title>xmasscan</title>
     <link href="css/style.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
   </head>
   <body>
-
     <div>
-      <h1><a href="index.html" style="color: white;">>xmasscan</a></h1>
+      <h1 style="margin: 0px; margin-bottom: 10px;">xmasscan</h1>
+      <div class="navbar">      
+        <ul>
+          <li><a>blog</a></li>
+          <li><a>resume</a></li>
+        </ul>
+      </div>
+    </div>
+    <div>
+      <h2>About Me</h2>
       <ul>
-        <li><h3><a href="./portfolio">/portfolio</a></h3></li>
-        <li><h3><a href="./blog">/blog</a></h3></li>
-        <li><h3><a href="./ctfs">/ctfs</a></h3></li>
+        <li>Michael Hanif Khan</li>
+        <li>Computer Science Undergraduate @ UIC</li>
+        <li>President of the Linux Users' Group @ UIC</li>
+        <li>CyberForce 2024 Participant</li>
+        <li>MuRL@UIC Research Spring 2025</li>
+      </ul> 
+      <ul>
+        <li><a href="https://github.com/xmasscan">github</a></li>
       </ul>
+      <p>I'm very much interested in the "Systems" side of Computer Science. Specfically, I am interested in learning about Network Security and Efficency, anything Cybersecurity, and Cryptography. However, I typically find anything under the aforementioned Computer Systems umbrella to be partcicularly interesting!</p>
+      <p>I like picking things apart and messing with them.</p>
     </div>
-
-    <div id="body">
-    <div id="main">
-      <div class="column" id="about-me">
-        <h2>about me</h2>
-        <p style="margin-top: 1%;">michael hanif khan 
-        <br>computer science undergrad @ uic
-        <br>lug @ uic member
-        <br>DoE cyberforce participant
-        </p>I use Arch, btw.
-        </p>
-        <div id="links">
-            <ul>
-              <li><a target="_blank" href="https://github.com/xmasscan">github</a></li>
-              <li><a>linkedin</a></li>
-              <li><a target="_blank" href="https://lug.cs.uic.edu">lug@uic</a></li>
-              <li><a>rss</a></li>
-            </ul>
-        </div>
-      </div>
-      <div class="column" id="interests">
-        <h2>interests</h2>
-        <h3>network security</h3>
-        <h3>digital forensics</h3>
-        <h3>cryptography</h3>
-      </div>
+    <div>
+      <h2>Why "xmasscan"?</h2>
+      <p>During high school, I spent a lot of my time trawling <a href="https://nmap.org/book">nmap official book</a> to learn more about networks and network scanning. One of the scanning methods that interested me the most was the <b>xmas scan</b>.</p>
+      <p>Part of why it stuck with me was that it was just so interesting to think and talk about. Its whole gimmick is that if you send a packet lacking set SYN, RST, and/or ACK bit(s) set, the TCP RFC says you should get a "RST" in response. In theory, this should be indistinguishable from someone with a laggy connection or one which dropped in the middle of sending the packet. This fails for two reasons however. First, not everyone implements the RFC specifcation. In fact a LOT don't. Secondly, it stops seeming like a bad connection if you try this on a bunch of ports.</p>
+      <p>Nonetheless, I remained drawn to it. Part of it was the novelty of a scanning approach that exploits a loophole in an RFC rather than some underlying vulnerability or common shortfall. On the other hand, I think its important to remember things like this. On one hand, it reminds me that good ideas do not always lead to monumental successes, nor that they need to, while on the other hand, it reminds me of what I love about security and computer science at a whole. It is this scan which laid the groundwork for me learning about basic networking and how network packets are assembled. Everytime I try and dissect a topic or a bug, it feels like I'm discovering what an xmas scan is all over again.</p>
+      <p>It also is a fun story to tell. :)</p>
     </div>
-  </div>
-  <p>this site is in early development. thank you for your patience.</p>
   </body>
 </html>
