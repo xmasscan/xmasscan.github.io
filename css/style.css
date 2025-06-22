@@ -36,27 +36,3 @@ a {
 a:visited {
   color: #b16286;
 }
-
-#whoami li {
-  padding-bottom: 8px;
-}
-
-.navbar li,
-#socials li {
-  float: left;
-}
-
-#socials li {
-  padding-right: 16px;
-}
-
-.navbar li a {
-  color: #d5c4a1;
-  display: block;
-  text-align: center;
-  padding-right: 16px;
-}
-
-.navbar li a:hover {
-  color: #ebdbb2;
-}
