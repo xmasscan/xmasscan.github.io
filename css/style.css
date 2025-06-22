@@ -30,6 +30,7 @@ ul {
 
 a {
   color: #458588;
+  text-decoration: none;
 }
 
 a:visited {
