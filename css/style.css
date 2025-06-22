@@ -28,10 +28,6 @@ ul {
   overflow: hidden;
 }
 
-#whoami li {
-  padding-bottom: 8px;
-}
-
 a {
   color: #458588;
 }
@@ -40,9 +36,17 @@ a:visited {
   color: #b16286;
 }
 
+#whoami li {
+  padding-bottom: 8px;
+}
 
-.navbar li {
+.navbar li,
+#socials li {
   float: left;
+}
+
+#socials li {
+  padding-right: 16px;
 }
 
 .navbar li a {
