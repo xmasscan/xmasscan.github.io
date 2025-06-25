@@ -8,5 +8,7 @@
 - [ ] Blogs "Index" page
   - [ ] 5 most recent blogs highlight
 
-### General Features
+### Page Style
 - [ ] Better GIF Support
+- [ ] Custom Footer
+- [ ] "Last Updated"
