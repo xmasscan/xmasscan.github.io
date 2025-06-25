@@ -5,6 +5,8 @@
 METADATA := metadata.yml
 # Blog Template File
 TEMPLATE := template.html
+# Blog CSS
+CSS := css/blog.css
 
 # Directory with markdown, christened "content"
 SOURCE := content
@@ -33,7 +35,6 @@ $(TARGET)/%.html : $(SOURCE)/%.md
 	$(PANDOC) $< -o $@
 
 # Update Blog if any article
-blog: $(TARGET_FILES) $(METADATA) $(TEMPLATE)
-	$(foreach file,$(TARGET_FILES),make $(file))
+blog: $(TARGET_FILES)
 
 all: blog
