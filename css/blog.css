@@ -1,0 +1,45 @@
+/* bettermotherfuckingwebsite.com */
+body {
+  margin: 40px auto;
+  max-width: 650px;
+  line-height: 1.6;
+  font-size: 18px;
+  padding: 0 10px
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.2
+}
+
+#title {
+  font-size: 2em;
+  font-weight: bolder;
+  margin-bottom: 0px;
+}
+
+#subtitle {
+  font-style: italic;
+  margin-top: 1%;
+}
+
+html {
+  background-color: #282828;
+  color: #ebdbb2;
+}
+
+a {
+  color: #458588;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #b16286;
+}
+
+#heading {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+}
