@@ -8,6 +8,7 @@
 - [ ] Re-Pandoc on metadata files updating
 
 ### Page Style
+- [ ] Homepage/Back Button
 - [ ] Better GIF Support
 - [ ] Custom Footer
 - [ ] "Last Updated"
