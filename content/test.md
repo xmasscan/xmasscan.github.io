@@ -1,7 +1,7 @@
 ---
+date: 1/1/1970
 title: Solid Snake Testing AWESOME
 subtitle: Subtitle
-date: 1/1/1970
 abstract: Find something to believe in, and find it for yourself. When you do, pass it on to the future.
 tags: awesomesauce cool amazing
 --- 

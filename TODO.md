@@ -11,3 +11,5 @@
 - [ ] Better GIF Support
 - [ ] Custom Footer
 - [ ] "Last Updated"
+  - [X] Shell Script to Fetch Date
+  - [ ] Metadata Manip

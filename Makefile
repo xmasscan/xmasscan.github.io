@@ -7,6 +7,10 @@ METADATA := metadata.yml
 TEMPLATE := template.html
 # Blog CSS
 CSS := css/blog.css
+# Blog Sitemap
+BLOG := blog.html
+# Scripts Directory
+SCRIPTS := scripts
 
 # Directory with markdown, christened "content"
 SOURCE := content
@@ -34,7 +38,11 @@ $(TARGET)/%.html : $(SOURCE)/%.md
 	$(info $<)
 	$(PANDOC) $< -o $@
 
+# When an article is added/removed, update blog.html
+$(BLOG): $(SOURCE)
+	$(shell $(SCRIPTS)/blog.sh)
+
 # Update Blog if any article
-blog: $(TARGET_FILES)
+blog: $(TARGET_FILES) $(BLOG)
 
 all: blog

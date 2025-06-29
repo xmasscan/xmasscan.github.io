@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Michael Hanif Khan">
     <title>$pagetitle$</title>
-    <link href="css/style.css" rel="stylesheet">
+    $if(css)$
     <link rel="stylesheet" type="text/css" href="$css$">
+    $endif$
   </head>
   <body>
   <p id="title">
@@ -16,6 +17,9 @@
   <p id="subtitle">
   $subtitle$
   </p>
+  $endif$
+  $if(date)$
+  <p id="date">Last Updated: $date$</p>
   $endif$
   $if(abstract)$
   <p style="margin-bottom: 0;"><b>Abstract</b></p>
