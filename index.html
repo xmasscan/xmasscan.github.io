@@ -3,50 +3,76 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title></title>
+    <title>xmasscan</title>
     <link href="css/style.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <style>
+      #whoami li {
+        padding-bottom: 8px;
+      }
+
+      .navbar li,
+      #socials li {
+        float: left;
+      }
+
+      #socials li {
+        padding-right: 16px;
+      }
+
+      .navbar li a {
+        color: #d5c4a1;
+        display: block;
+        text-align: center;
+        padding-right: 16px;
+      }
+
+      .navbar li a:hover {
+        color: #ebdbb2;
+      }
+    </style>
   </head>
   <body>
-
     <div>
-      <h1><a href="index.html" style="color: white;">>xmasscan</a></h1>
-      <ul>
-        <li><h3><a href="./portfolio">/portfolio</a></h3></li>
-        <li><h3><a href="./blog">/blog</a></h3></li>
-        <li><h3><a href="./ctfs">/ctfs</a></h3></li>
+      <h1 ><a style="color: #ebdbb2;" href="/index.html">xmasscan</a></h1>
+      <div class="navbar">      
+        <ul>
+          <li><a href="/blog.html">blog</a></li>
+          <!--- TODO: Upload resume to Github and link to compiled PDF so it updates automagically :) --->
+          <li><a href="/static/resume.pdf">resume</a></li>
+        </ul>
+      </div>
+    </div>
+    <div>
+      <h2>About Me</h2>
+      <ul id="whoami">
+        <li>Michael Hanif Khan</li>
+        <li>Computer Science Undergraduate @ UIC</li>
+        <li>President of the Linux Users' Group @ UIC</li>
+        <li>CyberForce 2024 Participant</li>
+        <li>MuRL@UIC Research Spring 2025</li>
+      </ul> 
+      <ul id="socials">
+        <li><a href="https://github.com/xmasscan">github</a></li>
+        <li><a href="https://www.linkedin.com/in/mkhan398/">linkedin</a></li>
       </ul>
     </div>
-
-    <div id="body">
-    <div id="main">
-      <div class="column" id="about-me">
-        <h2>about me</h2>
-        <p style="margin-top: 1%;">michael hanif khan 
-        <br>computer science undergrad @ uic
-        <br>lug @ uic member
-        <br>DoE cyberforce participant
-        </p>I use Arch, btw.
-        </p>
-        <div id="links">
-            <ul>
-              <li><a target="_blank" href="https://github.com/xmasscan">github</a></li>
-              <li><a>linkedin</a></li>
-              <li><a target="_blank" href="https://lug.cs.uic.edu">lug@uic</a></li>
-              <li><a>rss</a></li>
-            </ul>
-        </div>
-      </div>
-      <div class="column" id="interests">
-        <h2>interests</h2>
-        <h3>network security</h3>
-        <h3>digital forensics</h3>
-        <h3>cryptography</h3>
-      </div>
+    <div>
+      <h2>More About Me</h2>
+      <h3>Fields of Interest</h3>
+      <p>I'm studying Computer Science for a very simple reason. I'm interested in how computers work and how they are used. I find the design of complex systems, such as the internet and operating systems, to be as fascinating as the processes that they facilitate and the people who use them.</p>
+      <p>As a result my interests include, but are not limited to:</p>
+      <ol>
+        <li>Cybersecurity</li>
+        <li>Network Security</li>
+        <li>Cryptography</li>
+        <li>Systems Performance</li>
+        <li>Computer Graphics</li>
+      </ol>
+      <h3>Why "xmasscan"?</h3>
+      <p>In the most nascent days of my Cybersecurity career, during high school, I'd spend my free time reading through the <a href="https://nmap.org/book">official nmap book</a>, interesting in learning what I could about basic networking and network scanning.</p>
+      <p>I very quickly noticed the "Xmas Scan", wherein the scanner abuses a trick implied by the <a href="https://www.rfc-editor.org/rfc/rfc793.txt">TCP RFC</a>. Basically, if you send a packet to a port over TCP without SYN, RST, or ACK bits sent, you <em>should</em> recieve a RST packet in response so that you know something got messed up. Barring scanning, this behavior is most common when connections are choppy or drop in the middle of sending a packet.</p>
+      <p>What matters, however, is that I found it to be a novel way to approach port scanning which taught me quite a bit about the way packets are constructed. It was what I would consider the true beginning of my formal interest in the field and it is what inspired my ongoing interest in pursuing a career within it.</p>
+      <p>I chose to name my Github account after the scan because it remains a cool thing to tell people about, and it reminds me why I do what I do everytime I make a commit or merge a pull request!</p>
     </div>
-  </div>
-  <p>this site is in early development. thank you for your patience.</p>
   </body>
 </html>
