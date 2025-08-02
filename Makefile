@@ -42,7 +42,7 @@ $(TARGET)/%.html : $(SOURCE)/%.md
 $(BLOG): $(SOURCE)
 	$(shell $(SCRIPTS)/blog.sh)
 
-# Update Blog if any article
+# Update Blog if any article is updated or added
 blog: $(TARGET_FILES) $(BLOG)
 
 all: blog
