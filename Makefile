@@ -1,4 +1,4 @@
-.PHONY: all
+.PHONY: all clean
 
 # Constants
 # Metadata File
@@ -34,6 +34,9 @@ TARGET_FILES := $(patsubst %$(SOURCE_EXT),%$(TARGET_EXT),$(SOURCE_FILES))
 # Replace Source Folder with Target Folder
 TARGET_FILES := $(patsubst $(SOURCE)/%,$(TARGET)/%,$(TARGET_FILES))
 
+$(TARGET):
+	mkdir $(TARGET)
+
 $(TARGET)/%.html : $(SOURCE)/%.md
 	$(info $<)
 	$(PANDOC) $< -o $@
@@ -43,6 +46,13 @@ $(BLOG): $(SOURCE)
 	$(shell $(SCRIPTS)/blog.sh)
 
 # Update Blog if any article is updated or added
-blog: $(TARGET_FILES) $(BLOG)
 
-all: blog
+clean:
+	rm -rf $(TARGET)
+
+all: $(TARGET) $(TARGET_FILES) $(BLOG)
+
+# Build website, then run locally for testing.
+# Shamelessly taken from lugatuic.github.io Makefile
+demo: all
+	python -m http.server -d . -b 127.0.0.1 8080
