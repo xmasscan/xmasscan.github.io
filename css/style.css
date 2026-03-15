@@ -2,7 +2,8 @@
 
 /* bettermotherfuckingwebsite.com */
 body {
-  margin: 40px auto;
+  margin: auto;
+  margin-top: 0px;
   max-width: 650px;
   line-height: 1.6;
   font-size: 18px;
@@ -18,7 +19,6 @@ h3 {
 html {
   background-color: #282828;
   color: #ebdbb2;
-  margin: 40px;
 }
 
 ul {
@@ -35,4 +35,11 @@ a {
 
 a:visited {
   color: #b16286;
+}
+
+#content {
+  background-color: #1e1e1e;
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-bottom: 1%;
 }
