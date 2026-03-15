@@ -43,3 +43,7 @@ a:visited {
   flex-direction: column;
   gap: 0px;
 }
+
+figure {
+  margin-left: 0px;
+}
