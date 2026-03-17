@@ -6,17 +6,23 @@
     <title>xmasscan</title>
     <link href="css/style.css" rel="stylesheet">
     <style>
+      #whoami {
+        list-style: square;
+        list-style-position: inside;
+        padding-left: 0.5em;
+      }
+
       #whoami li {
         padding-bottom: 8px;
       }
 
-      .navbar ul {
+      #navbar ul {
         border-bottom-color: #d5c4a1;
         border-bottom-style: solid;
         border-bottom-width: 1px;
       }
 
-      .navbar li,
+      #navbar li,
       #socials li {
         float: left;
       }
@@ -25,24 +31,25 @@
         padding-right: 16px;
       }
 
-      .navbar li a {
+      #navbar li a {
         color: #d5c4a1;
         display: block;
         text-align: center;
         padding-right: 16px;
       }
 
-      .navbar li a:hover {
+      #navbar li a:hover {
         color: #ebdbb2;
-      }
+      } 
+      
     </style>
   </head>
   <body>
     <div>
-      <h1 style="margin-bottom: 1%;"><a style="color: #ebdbb2;" href="/index.html">xmasscan</a></h1>
-      <div class="navbar">      
+      <h1 style="margin-left: 2%; margin-bottom: 1%;"><a style="color: #ebdbb2;" href="/index.html">xmasscan</a></h1>
+      <div id="navbar">      
         <ul>
-          <li><a href="/blog.html">blog</a></li>
+          <li style="margin-left: 2%;"><a href="/blog.html">blog</a></li>
           <li><a href="/resume/Michael-Khan.pdf">resume</a></li>
         </ul>
       </div>
@@ -53,10 +60,10 @@
         <ul id="whoami">
           <li>Michael Hanif Khan</li>
           <li>Computer Science Undergraduate @ UIC</li>
-          <li>President of the Linux Users' Group @ UIC</li>
+          <li>President of the Linux User Group @ UIC</li>
           <li>CyberForce Participant: '24, '25</li>
           <li>MuRL@UIC Research Spring 2025</li>
-          <li>SISL@UIC & DPI Fall 2025</li>
+          <li>SISL@UIC & DPI Fall 2025 - Current</li>
         </ul> 
         <ul id="socials">
           <li><a href="https://github.com/xmasscan">github</a></li>
@@ -64,17 +71,16 @@
         </ul>
       </div>
       <div>
-        <h2>More About Me</h2>
         <h3>Fields of Interest</h3>
-        <p>I'm studying Computer Science for a very simple reason. I'm interested in how computers work and how they are used. I find the design of complex systems, such as the internet and operating systems, to be as fascinating as the processes that they facilitate and the people who use them.</p>
-        <p>As a result my interests include, but are not limited to:</p>
-        <ol>
+        <p>I like building systems from the ground up, examining other systems from the top down, and bridging the gap between experimentation and digital forensics. Many people would categorize me as a "systems guy". I am interested in a lot within Computer Systems, but I am especially interested in Networking and CyberSecurity.</p> 
+        <p>Please contact me if you have research or work opportunities in the following fields:</p>
+        <ul>
           <li>Cybersecurity</li>
           <li>Network Security</li>
+          <li>Digital Forensics</li>
           <li>Cryptography</li>
-          <li>Systems Performance</li>
-          <li>Computer Graphics</li>
-        </ol>
+        </ul>
+
         <h3>Why "xmasscan"?</h3>
         <p>In the most nascent days of my Cybersecurity career, during high school, I'd spend my free time reading through the <a href="https://nmap.org/book">official nmap book</a>, interesting in learning what I could about basic networking and network scanning.</p>
         <p>I very quickly noticed the "Xmas Scan", wherein the scanner abuses a trick implied by the <a href="https://www.rfc-editor.org/rfc/rfc793.txt">TCP RFC</a>. Basically, if you send a packet to a port over TCP without SYN, RST, or ACK bits sent, you <em>should</em> recieve a RST packet in response so that you know something got messed up. Barring scanning, this behavior is most common when connections are choppy or drop in the middle of sending a packet.</p>

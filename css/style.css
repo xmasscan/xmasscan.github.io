@@ -21,7 +21,8 @@ html {
   color: #ebdbb2;
 }
 
-ul {
+#socials,
+#navbar ul {
   list-style-type: none;
   margin: 0px;
   padding: 0px;
